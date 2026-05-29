@@ -1,0 +1,174 @@
+/* ===============================
+   PRIMARY BACKGROUNDS
+   =============================== */
+.bgred {
+  background-color: var(--bgred);
+}
+
+.bgblack {
+  background-color: var(--bgblack);
+}
+
+.bgcolor-primary {
+  background-color: var(--bgcolor-primary);
+}
+
+.bgcolor-navy {
+  background-color: var(--bgcolor-navy);
+}
+
+.bgcolor-sky-blue {
+  background-color: var(--bgcolor-sky-blue);
+}
+
+.bgcolor-light-blue {
+  background-color: var(--bgcolor-light-blue);
+}
+
+.bgcolor-light-blue-pale {
+  background-color: var(--bgcolor-light-blue-pale);
+}
+
+/* ===============================
+   ACCENT BACKGROUNDS
+   =============================== */
+.bgcolor-medium-blue {
+  background-color: var(--bgcolor-medium-blue);
+}
+
+.bgcolor-medium-green {
+  background-color: var(--bgcolor-medium-green);
+}
+
+.bgcolor-light-green {
+  background-color: var(--bgcolor-light-green);
+}
+
+.bgcolor-light-orange {
+  background-color: var(--bgcolor-light-orange);
+}
+
+.bgcolor-yellow {
+  background-color: var(--bgcolor-yellow);
+}
+
+.bgcolor-light-violet {
+  background-color: var(--bgcolor-light-violet);
+}
+
+.bgcolor-dark-blue {
+  background-color: var(--bgcolor-dark-blue);
+}
+
+.bgcolor-sky-blue-accent {
+  background-color: var(--bgcolor-sky-blue-accent);
+}
+
+.bgcolor-turquoise {
+  background-color: var(--bgcolor-turquoise);
+}
+
+.bgcolor-brand-yellow {
+  background-color: var(--bgcolor-brand-yellow);
+}
+
+/* ===============================
+   NOTIFICATION BACKGROUNDS
+   =============================== */
+.bgcolor-success {
+  background-color: var(--bgcolor-success);
+}
+
+.bgcolor-danger {
+  background-color: var(--bgcolor-danger);
+}
+
+/* ===============================
+   SOCIAL BACKGROUNDS
+   =============================== */
+.bgcolor-twitter {
+  background-color: var(--bgcolor-twitter);
+}
+
+.bgcolor-facebook {
+  background-color: var(--bgcolor-facebook);
+}
+
+.bgcolor-linkedin {
+  background-color: var(--bgcolor-linkedin);
+}
+
+.bgcolor-pinterest {
+  background-color: var(--bgcolor-pinterest);
+}
+
+/* ===============================
+   FOOTER CTA
+   =============================== */
+.bgcolor-light-sky-blue-footer {
+  background-color: var(--bgcolor-light-sky-blue-footer);
+}
+
+.bgcolor-sky-blue-footer {
+  background-color: var(--bgcolor-sky-blue-footer);
+}
+
+.bgcolor-true-black {
+  background-color: var(--bgcolor-true-black);
+}
+
+.bgcolor-gray {
+  background-color: var(--bgcolor-gray);
+}
+
+.fontcolor-white {
+  color: var(--fontcolor-white);
+}
+
+.fontcolor-true-black {
+  color: var(--fontcolor-true-black);
+}
+
+.fontcolor-charcoal-gray {
+  color: var(--fontcolor-charcoal-gray);
+}
+
+.fontcolor-gray {
+  color: var(--fontcolor-gray);
+}
+
+.fontcolor-gray-90 {
+  color: var(--fontcolor-gray-90);
+}
+
+.fontcolor-gray-80 {
+  color: var(--fontcolor-gray-80);
+}
+
+.fontcolor-gray-70 {
+  color: var(--fontcolor-gray-70);
+}
+
+.fontcolor-gray-60 {
+  color: var(--fontcolor-gray-60);
+}
+
+.fontcolor-gray-50 {
+  color: var(--fontcolor-gray-50);
+}
+
+.fontcolor-gray-40 {
+  color: var(--fontcolor-gray-40);
+}
+
+.fontcolor-forest-green {
+  color: var(--fontcolor-forest-green);
+}
+
+.fontcolor-dark-brown {
+  color: var(--fontcolor-dark-brown);
+}
+
+.fontcolor-dark-blue {
+  color: var(--fontcolor-dark-blue);
+}

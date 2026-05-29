@@ -1,0 +1,126 @@
+:root {
+  --primary:#000;
+  --primary-light: #ebf6fc;
+  --navy: #253b56;
+  --gray: #8294aa;
+  --light-gray: #e7e7e7;
+  --light-gray-2: #F7F9FC;
+  --light-gray-3:#f4f4f4;
+  --dark-gray: #979797;
+  --red: #cf102d;
+  --orange: #ff4605;
+  --yellow: #ddad28;
+  --white: #fff;
+  --green: #61941b;
+  --error: #dc3545;
+  --black:#000;
+  --border-color :#D0D7DE;
+  --footnotes-color: #A1AFC0;
+  --content-color:#253B56;
+   --navy-1: #000080;
+  --dark-blue: #173662;
+  --button-primary: #CF102D;;
+  --button-secondary: #CE2030;
+
+  --button-primary-hover: #700918;
+  --button-primary-active: #4F0611;
+  --button-primary-disabled: #E38F9C;
+  --hover: #069ED766;
+  --hover-red: #a94442;
+  --primary-background: #132c4f;
+  --secondary-background: #6f3138;
+  --tertiary-background: #85853e;
+
+  --button-bgcolor: #1D3A64;
+  --footer-btn-background: #cf102d;
+  --header-hover-color:#1E355E;
+
+  --tab-background-color: #e6eef2;
+  --tab-icon-active-background : #0C76AF;
+  --tab-tracker-color: #EDF0F7;
+
+  --cta-text-color: #222;
+
+  --primary-gradient: linear-gradient(
+    90deg,
+      rgb(37 65 107 / 83%) 0%,
+    rgb(37 65 107 / 83%) 100%
+  );
+  --secondary-gradient: linear-gradient(
+    90deg,
+      rgb(142 81 87/ 65%) 0%,
+      rgb(142 81 87/ 65%) 40%,
+    rgb(142 81 87/ 65%) 65%
+  );
+  --tertiary-gradient: linear-gradient(
+    90deg,
+      rgb(193 193 111/ 65%) 0%,
+      rgb(193 193 111/ 65%) 40%,
+    rgb(193 193 111/ 65%) 65%
+  );
+
+  --bgcolor-primary: #C13E34;
+  --bgcolor-navy: #1E355E;
+  --bgcolor-sky-blue: #3B5BE7;
+  --bgcolor-light-blue: #3BBBE7;
+  --bgcolor-light-blue-pale: #55c1e9;
+  --bgred: #cf102d;
+  --bgblack: #000;
+
+  /* ===============================
+     ACCENT COLORS (BG)
+     =============================== */
+  --bgcolor-medium-blue: #008fdc;
+  --bgcolor-medium-green: #0fa62c;
+  --bgcolor-light-green: #94d600;
+  --bgcolor-light-orange: #f3963f;
+  --bgcolor-yellow: #f3cf40;
+  --bgcolor-light-violet: #a654a1;
+
+  --bgcolor-dark-blue: #0076A9;
+  --bgcolor-sky-blue-accent: #0C76AF;
+  --bgcolor-turquoise: #0096AB;
+  --bgcolor-brand-yellow: #FDD874;
+  --bg-color-footer-legal:#f7f7f7;
+
+  /* ===============================
+     NOTIFICATION COLORS (BG)
+     =============================== */
+  --bgcolor-success: #008C5A;
+  --bgcolor-danger: #E04343;
+
+  /* ===============================
+     SOCIAL COLORS (BG)
+     =============================== */
+  --bgcolor-twitter: #1DA1F2;
+  --bgcolor-facebook: #3B5998;
+  --bgcolor-linkedin: #0077B5;
+  --bgcolor-pinterest: #BD081C;
+  --bg-color-instagram:#E4405F;
+  --bgcolor-true-black: #000;
+  --bgcolor-gray: #ebeeef;
+
+  /* ===============================
+     NEUTRALS / GRAYS (TEXT)
+     =============================== */
+  --fontcolor-true-black: #000;
+  --fontcolor-charcoal-gray: #97b5c7;
+  --fontcolor-gray: #404040;
+  --fontcolor-gray-90: #2F2F2F;
+  --fontcolor-gray-80: #4F5D72;
+  --fontcolor-gray-70: #7F8E99;
+  --fontcolor-gray-60: #9FB1BA;
+  --fontcolor-gray-50: #BACACC;
+  --fontcolor-gray-40: #D9DDDA;
+  --fontcolor-forest-green: #005206;
+  --fontcolor-dark-brown: #613000;
+  --fontcolor-dark-blue: #083c5d;
+
+  /* Utility */
+  --fontcolor-white: #fff;
+
+  /* Footer CTA */
+  --bgcolor-light-sky-blue-footer: #d7f0fa;
+  --bgcolor-sky-blue-footer: #c4e9f8;
+
+}

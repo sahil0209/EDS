@@ -1,0 +1,18 @@
+{
+  "name": "myridius-importer-tools",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Import tools for Myridius website content",
+  "scripts": {
+    "import-proxy-server": "node import-proxy-server.js",
+    "process-crawl-report": "node process-crawl-report.js"
+  },
+  "dependencies": {
+    "boxen": "^8.0.1",
+    "colors": "^1.4.0",
+    "execa": "^9.6.0",
+    "open": "^10.2.0",
+    "puppeteer": "^24.10.0"
+  }
+}

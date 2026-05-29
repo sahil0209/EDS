@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Date Picker Plugin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="data:,">
+  <script src="https://da.live/nx/utils/sdk.js" type="module"></script>
+  <script src="/tools/date-picker/date-picker.js" type="module"></script>
+  <link rel="stylesheet" href="/tools/date-picker/date-picker.css">
+</head>
+<body>
+  <div class="date-picker-app">
+    <header class="date-picker-header">
+      <h1>Date Picker</h1>
+      <p>Select a date to insert into your document</p>
+    </header>
+    
+    <main class="date-picker-main">
+      <div class="date-picker-container">
+        <div class="calendar-section">
+          <div class="calendar-header">
+            <button id="prevMonth" class="nav-button" aria-label="Previous month">‹</button>
+            <h2 id="currentMonth"></h2>
+            <button id="nextMonth" class="nav-button" aria-label="Next month">›</button>
+          </div>
+          
+          <div class="calendar-grid" id="calendarGrid">
+            <!-- Calendar will be generated here -->
+          </div>
+        </div>
+        
+        <div class="selected-date-section">
+          <h3>Selected Date</h3>
+          <div id="selectedDateDisplay" class="selected-date-display">
+            No date selected
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+.button-creator {
+  font-family: var(--body-font-family);
+  padding: 20px;
+}
+
+h1 {
+  margin: 0 0 16px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+button.standard {
+  background-color: transparent;
+  border: none;
+  color: var(--primary);
+  text-decoration: underline;
+  font-weight: 400;
+  min-width: auto;
+}
+
+button.standard:hover {
+  color: var(--navy);
+  background-color: transparent;
+}
+

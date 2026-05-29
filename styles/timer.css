@@ -1,0 +1,102 @@
+.timer-group {
+  text-align: center;
+  flex: 1;
+}
+
+.timer-digits {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  margin-bottom: var(--spacing-xxxs);
+  position: relative;
+}
+
+.timer-digit {
+  background: var(--white);
+  border-radius: var(--spacing-xxxs);
+
+  @media (width > 320px) {
+    padding: var(--spacing-xxs);
+  }
+  min-width: 32px;
+  font-size: var(--heading-font-size-s);
+  font-weight: bold;
+  color: var(--navy);
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.timer-digit span {
+  position: relative;
+  z-index: 3;
+  background: var(--white);
+  padding: 0 var(--spacing-xxxs);
+  display: inline-block;
+}
+
+.timer-label {
+  font-size: var(--body-font-size-m);
+  color: var(--white);
+  margin-top: var(--spacing-xxxs);
+  font-weight: 500;
+}
+
+.event-timer {
+  display: flex;
+  gap: 4px;
+  margin: var(--spacing-xs) 0;
+  flex-shrink: 0;
+}
+
+.event-timer .timer-group {
+  padding: var(--spacing-xxxxs);
+  flex: 1;
+}
+
+.event-timer .timer-digit {
+  font-size: var(--body-font-size-xl);
+  min-width: 21px;
+  
+  @media (width > 320px) {
+    padding: 10px 6px;
+  }
+}
+
+.event-timer .timer-digits {
+  gap: var(--spacing-xxxxs);
+}
+
+.event-header-countdown {
+  display: flex;
+  gap: 4px;
+  margin: var(--spacing-xxs) 0;
+  flex-wrap: wrap;
+}
+
+.event-header-countdown .timer-digit {
+  font-size: var(--heading-font-size-l);
+  min-width: 24px;
+  min-height: 40px;
+  padding: var(--spacing-xxxxs);
+  font-weight: 500;
+}
+
+@media (width < 1024px) {
+  .event-header-countdown {
+    gap: var(--spacing-xs);
+    margin: var(--spacing-xs) 0;
+  }
+
+  .event-header-countdown .timer-group {
+    padding: var(--spacing-xxxs);
+  }
+
+  .event-header-countdown .timer-digit {
+    font-size: var(--heading-font-size-s);
+    min-width: 20px;
+  }
+}

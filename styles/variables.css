@@ -1,0 +1,83 @@
+@import url('./palette.css');
+
+:root {
+  /** Site variables */
+  --desktop-max-width: 1250px;
+  --site-max-width: 1140px;
+  --content-width-md: 900px;
+  --content-width-sm: 600px;
+  --content-width-xs: 400px;
+  --nav-height: 64px;
+  --icon-size-xxs: 12px;
+  --icon-size-xs: 16px;
+  --icon-size-ss: 20px;
+  --icon-size-s: 24px;
+  --icon-size: 32px;
+  --icon-size-m: 35px;
+  --icon-size-l: 40px;
+  --icon-size-xl: 48px;
+  --icon-size-xxl: 56px;
+  --icon-size-xxxl: 64px;
+  --icon-size-xxxxl: 72px;
+
+  /** Color variables */
+  --background-color: var(--white);
+  --text-color: var(--black);
+  --link-color: var(--black);
+  --link-hover-color: #700918;
+  --link-hover-color2: var(--hover);
+  --footnotes-text-color: var(--footnotes-color);
+
+  /** Font variables */
+  --body-font-family: "InspireTWDC", "InspireTWDC-fallback", arial, sans-serif;
+  --heading-font-family: "InspireTWDC", "InspireTWDC-fallback", arial, sans-serif;
+  --font-family-black: "InspireTWDCBlack", "InspireTWDC-fallback",arial, sans-serif;
+  --font-family-medium: "InspireTWDCMedium", "InspireTWDC-fallback", arial, sans-serif;
+  --font-family-heavy: "InspireTWDCHeavy", "InspireTWDC", arial, sans-serif;
+  --font-family-light: "InspireTWDCLight", "InspireTWDC-fallback", arial, sans-serif;
+  --font-family-roman: "InspireTWDCRoman", "InspireTWDC", arial, sans-serif;
+  --icon-font-family: "Pepmdx", sans-serif;
+  --cta-font-family: "Helvetica Neue", arial, helvetica, sans-serif;
+
+  /** Font size variables */
+  --body-font-size-xxl: 1.5rem; /* 24px */
+  --body-font-size-xl: 1.25rem; /* 20px */
+  --body-font-size-l: 1.125rem; /* 18px */
+  --body-font-size-m: 1rem; /* 16px */
+  --body-font-size-s: 0.875rem; /* 14px */
+  --body-font-size-xs: 0.75rem; /* 12px */
+  --border-color: #D0D7DE;
+
+  /** Heading font size variables */
+  --heading-font-size-xxxl: 2.25rem; /* 40px */
+  --heading-font-size-xxl: 2rem; /* 32px */
+  --heading-font-size-xl: 1.75rem; /* 28px */
+  --heading-font-size-l: 1.5rem; /* 24px */
+  --heading-font-size-m: 1.25rem; /* 20px */
+  --heading-font-size-s: 1.125rem; /* 18px */
+  --heading-font-size-xs: 1rem; /* 16px */
+
+  /* Z-index variables */
+  --z-index-seabed: -10000;
+  --z-index-below: -100;
+  --z-index-default: 1;
+  --z-index-above: 100;
+  --z-index-nav: 600;
+  --z-index-modal: 800;
+  --z-index-popover: 900;
+  --z-index-tooltip: 1000;
+
+  /** Spacing Variables */
+  --spacing-xxxxs: 0.125rem; /* 2px */
+  --spacing-xxxs: 0.25rem; /* 4px */
+  --spacing-xxs: 0.5rem; /* 8px */
+  --spacing-xs: 0.75rem; /* 12px */
+  --spacing-s: 1rem; /* 16px */
+  --spacing-ss: 1.25rem; /* 20px */
+  --spacing-m: 1.5rem; /* 24px */
+  --spacing-l: 2rem; /* 32px */
+  --spacing-xl: 2.5rem; /* 40px */
+  --spacing-xxl: 3rem; /* 48px */
+  --spacing-xxxl: 3.5rem; /* 56px */
+  --spacing-xxxxl: 4rem; /* 64px */
+}

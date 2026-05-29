@@ -1,0 +1,19 @@
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}

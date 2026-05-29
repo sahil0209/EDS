@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Myridius Tagger</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="data:,">
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="https://da.live/nx/utils/sdk.js" type="module"></script>
+  <script src="/tools/tagger/tagger.js" type="module"></script>
+  <link rel="stylesheet" href="/tools/tagger/tagger.css">
+</head>
+<body>
+  <div class="tagger-app">
+    <header class="tagger-header">
+      <h1>Myridius Taxonomy</h1>
+      <p>Select tags for your content from the Myridius taxonomy</p>
+      <div id="loading-indicator" class="loading-indicator">
+        <div class="spinner"></div>
+        <span>Loading taxonomy data...</span>
+      </div>
+    </header>
+    <main class="tagger-main">
+      <div class="tagger-layout">
+        <aside class="search-sidebar">
+          <div class="search-section">
+            <h3>Search Tags</h3>
+            <input type="text" id="tag-search" placeholder="Search tags...">
+          </div>
+          
+          <div class="selected-tags-section">
+            <h3>Selected Tags</h3>
+            <div id="selected-tags-list" class="selected-tags-list">
+              <p class="no-tags">No tags selected</p>
+            </div>
+            <div class="selection-actions">
+              <button id="apply-tags-btn" class="apply-btn">Apply Selected Tags</button>
+              <button id="clear-tags-btn" class="clear-btn">Clear All</button>
+            </div>
+          </div>
+        </aside>
+
+        <section class="tags-content">
+          <div id="tags-categories" class="tags-categories">
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script type="module" src="tagger.js"></script>
+</body>
+
+</html>
