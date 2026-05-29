@@ -249,7 +249,9 @@ const handleStoryCards = (main) => {
         const hasIcon = !storyCardsSection.querySelector('.full-alternate.single') && storyCardsSection.querySelector('.titleRow .pepicon');
         const blockName = hasIcon ? 'Columns (Icon Separator)' : 'Columns (border)';
 
-        // const hasBlueBackground = storyCardsSection.querySelector('.media-body[ng-style*="backgroundColor"]');
+        // const hasBlueBackground = storyCardsSection.querySelector(
+        //   '.media-body[ng-style*="backgroundColor"]',
+        // );
         // if (hasBlueBackground) {
         //   blockName = hasIcon ? 'Columns (Icon Separator, Blue)' : 'Columns (Blue)';
         // }
