@@ -18,6 +18,7 @@
   @media (width > 320px) {
     padding: var(--spacing-xxs);
   }
+
   min-width: 32px;
   font-size: var(--heading-font-size-s);
   font-weight: bold;

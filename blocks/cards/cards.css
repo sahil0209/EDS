@@ -1843,6 +1843,7 @@
 
   @media (width < 1024px) {
     --multi-layout-promo-grid-gap: 18px;
+
     max-width: 100%;
 
     >ul {

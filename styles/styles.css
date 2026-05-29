@@ -203,6 +203,7 @@ article {
 }
 
 
+/* stylelint-disable selector-class-pattern -- icon font BEM naming */
 .extra-content .icon__close-button {
   position: absolute;
   top: var(--spacing-xxs);
@@ -367,6 +368,7 @@ body.no-scroll {
     color: var(--black);
   }
 }
+/* stylelint-enable selector-class-pattern */
 
 @media (width>= 800px) {
   .extra-content {

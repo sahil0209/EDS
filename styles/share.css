@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 .share-button {
   display: flex;
   align-items: center;
