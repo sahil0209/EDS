@@ -1,6 +1,6 @@
-import puppeteer from 'puppeteer'; // eslint-disable-line import/no-extraneous-dependencies
+import puppeteer from 'puppeteer'; // eslint-disable-line import/no-extraneous-dependencies, import/no-unresolved
 import { createServer } from 'http';
-import open from 'open'; // eslint-disable-line import/no-extraneous-dependencies
+import open from 'open'; // eslint-disable-line import/no-extraneous-dependencies, import/no-unresolved
 import { readFileSync } from 'fs';
 import { join } from 'path';
 import { logger, colors } from './utils.js';
@@ -89,12 +89,12 @@ async function prerenderPage(targetUrl) {
     const fontData = readFileSync(fontPath);
     const fontBase64 = fontData.toString('base64');
 
-    await page.evaluateOnNewDocument((fontBase64) => {
+    await page.evaluateOnNewDocument((encodedFont) => {
       const fontInjection = `
       <style>
         @font-face {
           font-family: 'Pepmdx';
-          src: url('data:font/woff;base64,${fontBase64}') format('woff');
+          src: url('data:font/woff;base64,${encodedFont}') format('woff');
           font-weight: normal;
           font-style: normal;
         }
