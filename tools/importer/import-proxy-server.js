@@ -148,7 +148,7 @@ async function prerenderPage(targetUrl) {
       const images = Array.from(document.querySelectorAll('img'));
       return images.every((img) => img.complete || img.naturalHeight !== 0);
     }, { timeout: 10000 }).catch(() => {
-      console.log('Some images may have failed to load.');
+      logger.warn('Some images may have failed to load.');
     });
 
     await page.waitForFunction(() => document.querySelector('span[category-id]') !== null, { timeout: 10000 }).catch(() => {
