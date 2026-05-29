@@ -10,7 +10,7 @@
  * governing permissions and limitations under the License.
  */
 /* global WebImporter */
-/* eslint-disable no-console, class-methods-use-this */
+/* eslint-disable no-console, class-methods-use-this, no-unused-vars */
 
 const handleStoryCards = (main) => {
   // standard cards - with icons or image
@@ -30,7 +30,12 @@ const handleStoryCards = (main) => {
             const icon = card.querySelector('.headerIcon');
             const img = card.querySelector('img');
             const link = card.querySelector('a');
-            const leftCol = icon ? icon.outerHTML : (img ? img.outerHTML : '');
+            let leftCol = '';
+            if (icon) {
+              leftCol = icon.outerHTML;
+            } else if (img) {
+              leftCol = img.outerHTML;
+            }
 
             const isClickableCardsBlock = link && link.textContent === link.href;
 
@@ -74,8 +79,15 @@ const handleStoryCards = (main) => {
     [...storyCardsSections].forEach((storyCardsSection) => {
       const wrapper = storyCardsSection.closest('.storyCardWrapper');
       const cardBlockClasses = ['square-card', 'normal-card', 'two-column-card'];
-      const isCardsBlock = wrapper && cardBlockClasses.some((cls) => wrapper.classList.contains(cls));
-      const isColumnsBlock = wrapper && (wrapper.classList.contains('stamp-cards') || wrapper.querySelector('.media.full-width.single') || storyCardsSection.querySelector('.event-card.single') || storyCardsSection.querySelector('.full-alternate.single') || wrapper.classList.contains('single') && !storyCardsSection.querySelector('.event-card'));
+      const isCardsBlock = wrapper
+        && cardBlockClasses.some((cls) => wrapper.classList.contains(cls));
+      const isColumnsBlock = wrapper && (
+        wrapper.classList.contains('stamp-cards')
+        || wrapper.querySelector('.media.full-width.single')
+        || storyCardsSection.querySelector('.event-card.single')
+        || storyCardsSection.querySelector('.full-alternate.single')
+        || (wrapper.classList.contains('single') && !storyCardsSection.querySelector('.event-card'))
+      );
       const isEventDetailBlock = storyCardsSection.querySelector('.event-card');
       const isIconListBlock = wrapper && (wrapper.classList.contains('storyCardBadge'));
       const isCalloutBlock = (storyCardsSection.querySelector('.storyCardIcon') && !wrapper.classList.contains('storyCardBadge')) || storyCardsSection.querySelector('as-story-card-training-item');
@@ -83,8 +95,8 @@ const handleStoryCards = (main) => {
       const checklist = storyCardsSection.querySelectorAll('.check-list');
 
       if (checklist.length > 0) {
-        checklist.forEach((checklist) => {
-          checklist.querySelectorAll('.pepicon').forEach((icon) => {
+        checklist.forEach((checklistEl) => {
+          checklistEl.querySelectorAll('.pepicon').forEach((icon) => {
             icon.remove();
           });
         });
@@ -237,7 +249,7 @@ const handleStoryCards = (main) => {
         const hasIcon = !storyCardsSection.querySelector('.full-alternate.single') && storyCardsSection.querySelector('.titleRow .pepicon');
         const blockName = hasIcon ? 'Columns (Icon Separator)' : 'Columns (border)';
 
-        const hasBlueBackground = storyCardsSection.querySelector('.media-body[ng-style*="backgroundColor"]');
+        // const hasBlueBackground = storyCardsSection.querySelector('.media-body[ng-style*="backgroundColor"]');
         // if (hasBlueBackground) {
         //   blockName = hasIcon ? 'Columns (Icon Separator, Blue)' : 'Columns (Blue)';
         // }
@@ -554,9 +566,10 @@ export const handleSections = (main) => {
       }
 
       const firstDiv = section.querySelector('div');
-      // add more below later - there are many shades of slighly different gray colors being used as background colors and borders.
+      // Add more below later - many gray background shades and borders are used on the site.
       const grayBackgroundSections = ['featuredEventsContainer'];
-      const isGrayBackgroundSection = firstDiv && grayBackgroundSections.some((cls) => firstDiv.classList.contains(cls));
+      const isGrayBackgroundSection = firstDiv
+        && grayBackgroundSections.some((cls) => firstDiv.classList.contains(cls));
       const isIconFramedSection = firstDiv && firstDiv.classList.contains('storyCardBadge');
       const isPrimaryIntro = section.classList.contains('primaryContentIntro');
 

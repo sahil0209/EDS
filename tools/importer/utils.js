@@ -1,5 +1,5 @@
-import boxen from 'boxen'; // eslint-disable-line import/no-extraneous-dependencies
-import colors from 'colors'; // eslint-disable-line import/no-extraneous-dependencies
+import boxen from 'boxen'; // eslint-disable-line import/no-extraneous-dependencies, import/no-unresolved
+import colors from 'colors'; // eslint-disable-line import/no-extraneous-dependencies, import/no-unresolved
 
 colors.setTheme({
   info: 'cyan',

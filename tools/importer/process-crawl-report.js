@@ -3,7 +3,7 @@
 import { readFile, writeFile } from 'fs/promises';
 import { existsSync } from 'fs';
 import path from 'path';
-import { execa } from 'execa'; // eslint-disable-line import/no-extraneous-dependencies
+import { execa } from 'execa'; // eslint-disable-line import/no-extraneous-dependencies, import/no-unresolved
 import { logger, colors } from './utils.js';
 
 const SOURCE_DOMAIN = 'https://www.myridius.com';
